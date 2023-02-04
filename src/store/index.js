@@ -16,7 +16,7 @@ const counterSlice = createSlice({
       state.counter = state.counter + action.payload;
     },
     toggle(state) {
-      state.showCounter = !showCounter;
+      state.showCounter = !state.showCounter;
     },
   },
 });
