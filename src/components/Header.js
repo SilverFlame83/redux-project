@@ -4,10 +4,10 @@ import { authActions } from "../store";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const auth = useSelector((state) => state.auth.isAuth);
+  const auth = useSelector((state) => state.auth.isAuthenticated);
 
   const logoutHandler=()=>{
-    dispatch(authActions.logout)
+    dispatch(authActions.logout())
   }
 
   return (
